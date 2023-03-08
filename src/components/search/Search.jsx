@@ -1,12 +1,11 @@
 import "./search.css";
 import { useData } from "../home/Home";
 import React, { useState } from "react";
-// import Grid from "./Grid";
+import Grid from "../grid/Grid";
 
 function Searchbar({ countries, setIdSelect, setIdEdit, setEditCountry }) {
   const [searchData, setSearchData] = useState("");
   const [showSearch, setShowSearch] = useState(false);
-  const { countries } = useData();
   function handleInput(e) {
     setSearchData(e.target.value);
   }
@@ -58,17 +57,17 @@ function Searchbar({ countries, setIdSelect, setIdEdit, setEditCountry }) {
 
       {showSearch ? (
         <Grid
-          filteredCountries={filteredCountries}
-          //   setIdSelect={setIdSelect}
-          //   setIdEdit={setIdEdit}
-          //   setEditCountry={setEditCountry}
+          countries={filteredCountries}
+          setIdSelect={setIdSelect}
+          setIdEdit={setIdEdit}
+          setEditCountry={setEditCountry}
         />
       ) : (
         <Grid
-        //   countries={countries}
-        //   setIdSelect={setIdSelect}
-        //   setIdEdit={setIdEdit}
-        //   setEditCountry={setEditCountry}
+          countries={countries}
+          setIdSelect={setIdSelect}
+          setIdEdit={setIdEdit}
+          setEditCountry={setEditCountry}
         />
       )}
     </div>

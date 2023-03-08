@@ -1,5 +1,5 @@
-import { createContext, useContext, useState } from "react";
-import { countryList } from "./data";
+import { useState } from "react";
+import { countryList } from "../../data/data";
 import "./home.css";
 // import Popup from "./popup";
 import Searchbar from "../search/search";
@@ -13,8 +13,6 @@ function Home() {
   console.log(countries);
   console.log(idselect);
 
-  const dataContext = createContext();
-  const useData = () => useContext(dataContext);
   function addCountry() {
     setShowModal(true);
   }
@@ -52,24 +50,21 @@ function Home() {
 
   return (
     <div className="main">
-      <dataContext.Provider
-        value={(countries, setIdSelect, setIdEdit, setEditCountry)}
-      >
-        <Searchbar
-        //   countries={countries}
-        //   setIdSelect={setIdSelect}
-        //   setIdEdit={setIdEdit}
-        //   setEditCountry={setEditCountry}
+      <Searchbar
+        countries={countries}
+        setIdSelect={setIdSelect}
+        setIdEdit={setIdEdit}
+        setEditCountry={setEditCountry}
+      />
+      {/* <Grid countries={countries} /> */}
+      {showModal && (
+        <Popup
+          setModal={setShowModal}
+          countries={countries}
+          setCountries={setCountries}
         />
-        {/* <Grid countries={countries} /> */}
-        {showModal && (
-          <Popup
-            setModal={setShowModal}
-            // countries={countries}
-            // setCountries={setCountries}
-          />
-        )}
-      </dataContext.Provider>
+      )}
+
       <div className="btn-grp">
         <button onClick={addCountry} id="new-btn" className="btn">
           New
@@ -82,6 +77,6 @@ function Home() {
   );
 }
 
-export { useData, Home };
+export default Home;
 
 // value on new,delete and item div tag

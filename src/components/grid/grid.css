@@ -1,0 +1,88 @@
+.container {
+  display: grid;
+  grid-template-columns: 10rem 10rem 10rem 10rem;
+  grid-template-rows: 10rem 10rem 10rem;
+  grid-auto-flow: row;
+  justify-content: center;
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 150px;
+  box-sizing: border-box;
+  /* background-image: url("./assets/1200px-Grey_background.jpg"); */
+}
+.active {
+  border: 1px solid blue;
+  box-sizing: border-box;
+}
+.content {
+  width: 75px;
+  height: 75px;
+  margin: 10px;
+  background-image: url("./assets/1200px-Grey_background.jpg");
+  border-radius: 10px;
+}
+
+.content > img {
+  width: 100%;
+  height: 100%;
+  border: 50%;
+}
+
+h3 {
+  margin: 1px;
+}
+
+.grid-input {
+  border: none;
+  outline: none;
+  width: 45px;
+  word-wrap: break-word;
+}
+
+/* btn styles */
+
+.btn-grp {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 625px;
+  height: 50px;
+  /* background-color: red; */
+}
+.btn {
+  width: 250px;
+  height: 50px;
+  border: none;
+}
+#new-btn {
+  background-color: greenyellow;
+  color: white;
+}
+#del-btn {
+  background-color: red;
+  color: white;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: 5rem 5rem 5rem 5rem;
+    grid-gap: 15px;
+    margin-top: 10px;
+    margin-left: 0px;
+    overflow-x: hidden;
+  }
+  .item {
+    margin-left: -18px;
+  }
+  .content {
+    margin: 0px;
+  }
+}

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { countryList } from "../../data/data";
 import "./home.css";
-// import Popup from "./popup";
+import Popup from "../popup/Popup";
 import Searchbar from "../search/search";
 
 function Home() {

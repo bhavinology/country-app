@@ -1,5 +1,5 @@
 import "./grid.css";
-// import Input from "./input";
+import Input from "../input/Input";
 
 function Grid({ countries, setIdSelect, setIdEdit, setEditCountry }) {
   function selectItem(e) {

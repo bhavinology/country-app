@@ -1,0 +1,146 @@
+.src-container {
+  width: 100%;
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+}
+/* .search-container {
+  } */
+
+/* animated searchbar */
+.search {
+  margin-top: 10px;
+  position: relative;
+  left: 500px;
+  width: 45px;
+  height: 45px;
+  background-color: #fff;
+  border-radius: 60px;
+  transition: 0.5s;
+  /* box-shadow: 0 0 0 3px blue; */
+  overflow: hidden;
+}
+.search.actives {
+  width: 360px;
+}
+.search.right {
+  position: relative;
+  left: 0px;
+}
+.search .icon {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  border-radius: 60px;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  z-index: 1000;
+  cursor: pointer;
+}
+
+.search .icon::before {
+  content: "";
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border: 3px solid black;
+  border-radius: 50%;
+  transform: translate(-4px, -4px);
+}
+.search .icon::after {
+  content: "";
+  position: absolute;
+  width: 3px;
+  height: 15px;
+  background-color: black;
+  transform: translate(6px, 6px) rotate(320deg);
+}
+.search .input {
+  position: relative;
+  width: 300px;
+  height: 35px;
+  left: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  outline: none;
+}
+
+.search .input input {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  align-content: center;
+  font-size: 18px;
+}
+.title {
+  display: inline-block;
+  margin-left: 10px;
+}
+.clear {
+  position: absolute;
+  top: 40%;
+  transform: translate(-50%);
+  width: 15px;
+  height: 15px;
+  right: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.clear::before {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 15px;
+  background: #999;
+  transform: rotate(45deg);
+}
+.clear::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 15px;
+  background: #999;
+  transform: rotate(315deg);
+}
+
+.hide {
+  display: none;
+}
+
+/* Responsiveness */
+
+@media screen and (max-width: 640px) {
+  .src-container {
+    width: 100vw;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+  }
+  .search {
+    position: relative;
+    left: 300px;
+    overflow-x: hidden;
+  }
+  .search.actives {
+    position: sticky;
+    left: 20px;
+    width: 360px;
+    overflow-x: hidden;
+  }
+  .clear {
+    position: absolute;
+    right: 20px;
+  }
+}

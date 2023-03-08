@@ -2,7 +2,7 @@ import { createContext, useContext, useState } from "react";
 import { countryList } from "./data";
 import "./home.css";
 // import Popup from "./popup";
-// import Searchbar from "./searchbar";
+import Searchbar from "../search/search";
 
 function Home() {
   const [countries, setCountries] = useState(countryList);

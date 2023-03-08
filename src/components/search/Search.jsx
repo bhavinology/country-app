@@ -1,5 +1,4 @@
 import "./search.css";
-import { useData } from "../home/Home";
 import React, { useState } from "react";
 import Grid from "../grid/Grid";
 

@@ -26,32 +26,32 @@ export const countryList = [
   },
   {
     key: 6,
-    image: require("../assets/planet-earth.png"),
-    country: "France",
+    image: require("../assets/1200px-Grey_background.jpg"),
+    country: "",
   },
-  //   {
-  //     key: "7",
-  //     image: require("./assets/1200px-Grey_background.jpg"),
-  //     country: "",
-  //   },
-  //   {
-  //     key: "8",
-  //     image: require("./assets/1200px-Grey_background.jpg"),
-  //     country: "",
-  //   },
-  //   {
-  //     key: "9",
-  //     image: require("./assets/1200px-Grey_background.jpg"),
-  //     country: "",
-  //   },
-  //   {
-  //     key: "10",
-  //     image: require("./assets/1200px-Grey_background.jpg"),
-  //     country: "",
-  //   },
-  //   {
-  //     key: "11",
-  //     image: require("./assets/1200px-Grey_background.jpg"),
-  //     country: "",
-  //   },
+  {
+    key: "7",
+    image: require("../assets/1200px-Grey_background.jpg"),
+    country: "",
+  },
+  {
+    key: "8",
+    image: require("../assets/1200px-Grey_background.jpg"),
+    country: "",
+  },
+  {
+    key: "9",
+    image: require("../assets/1200px-Grey_background.jpg"),
+    country: "",
+  },
+  {
+    key: "10",
+    image: require("../assets/1200px-Grey_background.jpg"),
+    country: "",
+  },
+  {
+    key: "11",
+    image: require("../assets/1200px-Grey_background.jpg"),
+    country: "",
+  },
 ];

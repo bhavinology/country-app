@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { countryList } from "../../data/data";
 import "./home.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClose } from "@fortawesome/free-solid-svg-icons";
 import Popup from "../popup/Popup";
 import Searchbar from "../search/Search";
 
@@ -50,6 +52,13 @@ function Home() {
 
   return (
     <div className="main">
+      <div className="top-div">
+        <h4 className="home-title">Hi</h4>
+        <FontAwesomeIcon
+          className="home-close-btn"
+          icon={faClose}
+        ></FontAwesomeIcon>
+      </div>
       <Searchbar
         countries={countries}
         setIdSelect={setIdSelect}

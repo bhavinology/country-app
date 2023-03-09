@@ -1,11 +1,3 @@
-/* .container {
-  display: grid;
-  grid-template-columns: 10rem 10rem 10rem 10rem;
-  grid-template-rows: 10rem 10rem 10rem;
-  grid-auto-flow: row;
-  justify-content: center;
-} */
-
 .item {
   display: flex;
   flex-direction: column;
@@ -59,6 +51,28 @@ h3 {
   align-items: center;
 }
 
+.top-div {
+  height: 35px;
+  width: 100%;
+  background-color: #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* padding: 10px; */
+}
+
+.home-title {
+  height: 100%;
+  width: 30px;
+  background-color: navy;
+  color: white;
+  padding-left: 5px;
+}
+
+.home-close-btn {
+  padding-right: 5px;
+  height: 100%;
+}
 @media screen and (max-width: 640px) {
   .main {
     overflow-x: hidden;

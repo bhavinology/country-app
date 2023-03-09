@@ -1,5 +1,7 @@
 import "./search.css";
 import React, { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faMagnifyingGlass, faClose } from "@fortawesome/free-solid-svg-icons";
 import Grid from "../grid/Grid";
 
 function Searchbar({ countries, setIdSelect, setIdEdit, setEditCountry }) {
@@ -40,7 +42,9 @@ function Searchbar({ countries, setIdSelect, setIdEdit, setEditCountry }) {
       <div className="src-container">
         <h4 className="title">My items</h4>
         <div className="search">
-          <div className="icon" onClick={searchCountry}></div>
+          <div className="icon" onClick={searchCountry}>
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </div>
           <div className="input">
             <input
               className="src-input"
@@ -49,7 +53,9 @@ function Searchbar({ countries, setIdSelect, setIdEdit, setEditCountry }) {
               value={searchData}
               onChange={handleInput}
             ></input>
-            <span className="clear" onClick={clearInput}></span>
+            <span className="clear" onClick={clearInput}>
+              <FontAwesomeIcon icon={faClose} />
+            </span>
           </div>
         </div>
       </div>

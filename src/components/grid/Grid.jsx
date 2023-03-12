@@ -5,6 +5,12 @@ function Grid({ countries, setIdSelect, setIdEdit, setEditCountry }) {
   function selectItem(e) {
     e.stopPropagation();
     let id;
+    const gridItem = document.querySelectorAll(".item");
+    for (let i = 0; i < gridItem.length; i++) {
+      console.log("for loop in grid");
+      console.log(gridItem[i].classList);
+      gridItem[i].classList.remove("active");
+    }
 
     if (e.currentTarget.className.includes("active")) {
       id = 0;

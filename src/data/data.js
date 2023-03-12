@@ -35,7 +35,7 @@ export const countryList = [
     country: "",
   },
   {
-    key: "8",
+    key: 8,
     image: require("../assets/1200px-Grey_background.jpg"),
     country: "",
   },

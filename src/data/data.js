@@ -30,7 +30,7 @@ export const countryList = [
     country: "",
   },
   {
-    key: "7",
+    key: 7,
     image: require("../assets/1200px-Grey_background.jpg"),
     country: "",
   },
@@ -40,17 +40,17 @@ export const countryList = [
     country: "",
   },
   {
-    key: "9",
+    key: 9,
     image: require("../assets/1200px-Grey_background.jpg"),
     country: "",
   },
   {
-    key: "10",
+    key: 10,
     image: require("../assets/1200px-Grey_background.jpg"),
     country: "",
   },
   {
-    key: "11",
+    key: 11,
     image: require("../assets/1200px-Grey_background.jpg"),
     country: "",
   },

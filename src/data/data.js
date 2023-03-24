@@ -24,34 +24,34 @@ export const countryList = [
     image: require("../assets/planet-earth.png"),
     country: "Chile",
   },
-  {
-    key: 6,
-    image: require("../assets/1200px-Grey_background.jpg"),
-    country: "",
-  },
-  {
-    key: 7,
-    image: require("../assets/1200px-Grey_background.jpg"),
-    country: "",
-  },
-  {
-    key: 8,
-    image: require("../assets/1200px-Grey_background.jpg"),
-    country: "",
-  },
-  {
-    key: 9,
-    image: require("../assets/1200px-Grey_background.jpg"),
-    country: "",
-  },
-  {
-    key: 10,
-    image: require("../assets/1200px-Grey_background.jpg"),
-    country: "",
-  },
-  {
-    key: 11,
-    image: require("../assets/1200px-Grey_background.jpg"),
-    country: "",
-  },
+  // {
+  //   key: 6,
+  //   image: require("../assets/1200px-Grey_background.jpg"),
+  //   country: "",
+  // },
+  // {
+  //   key: 7,
+  //   image: require("../assets/1200px-Grey_background.jpg"),
+  //   country: "",
+  // },
+  // {
+  //   key: 8,
+  //   image: require("../assets/1200px-Grey_background.jpg"),
+  //   country: "",
+  // },
+  // {
+  //   key: 9,
+  //   image: require("../assets/1200px-Grey_background.jpg"),
+  //   country: "",
+  // },
+  // {
+  //   key: 10,
+  //   image: require("../assets/1200px-Grey_background.jpg"),
+  //   country: "",
+  // },
+  // {
+  //   key: 11,
+  //   image: require("../assets/1200px-Grey_background.jpg"),
+  //   country: "",
+  // },
 ];

@@ -64,6 +64,7 @@ function Home() {
         setIdSelect={setIdSelect}
         setIdEdit={setIdEdit}
         setEditCountry={setEditCountry}
+        idselect={idselect}
       />
       {/* <Grid countries={countries} /> */}
       {showModal && (

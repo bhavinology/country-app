@@ -4,7 +4,13 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass, faClose } from "@fortawesome/free-solid-svg-icons";
 import Grid from "../grid/Grid";
 
-function Searchbar({ countries, setIdSelect, setIdEdit, setEditCountry }) {
+function Searchbar({
+  countries,
+  setIdSelect,
+  setIdEdit,
+  setEditCountry,
+  idselect,
+}) {
   const [searchData, setSearchData] = useState("");
   const [showSearch, setShowSearch] = useState(false);
   function handleInput(e) {
@@ -66,6 +72,7 @@ function Searchbar({ countries, setIdSelect, setIdEdit, setEditCountry }) {
           setIdSelect={setIdSelect}
           setIdEdit={setIdEdit}
           setEditCountry={setEditCountry}
+          idselect={idselect}
         />
       ) : (
         <Grid
@@ -73,6 +80,7 @@ function Searchbar({ countries, setIdSelect, setIdEdit, setEditCountry }) {
           setIdSelect={setIdSelect}
           setIdEdit={setIdEdit}
           setEditCountry={setEditCountry}
+          idselect={idselect}
         />
       )}
     </div>

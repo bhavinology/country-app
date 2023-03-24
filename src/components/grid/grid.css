@@ -2,7 +2,7 @@
   display: grid;
   grid-template-columns: 10rem 10rem 10rem 10rem;
   grid-template-rows: 10rem 10rem 10rem;
-  grid-auto-flow: row;
+  /* grid-auto-flow: row; */
   justify-content: center;
 }
 
@@ -15,6 +15,9 @@
   height: 150px;
   box-sizing: border-box;
   /* background-image: url("./assets/1200px-Grey_background.jpg"); */
+}
+.blank {
+  background-image: url("../../assets/1200px-Grey_background.jpg");
 }
 .active {
   border: 1px solid blue;
@@ -73,8 +76,9 @@ h3 {
   .container {
     /* width: 100%; */
     display: grid;
-    grid-template-columns: 5rem 5rem 5rem 5rem;
-    grid-gap: 15px;
+    grid-template-columns: repeat(4, 5rem);
+    grid-template-rows: repeat(12, 8rem);
+    grid-gap: 15px 15px;
     margin-top: 10px;
     margin-left: 0px;
     overflow-x: hidden;

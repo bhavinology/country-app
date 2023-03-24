@@ -1,13 +1,8 @@
 import "./grid.css";
+import uuid from "react-uuid";
 import Input from "../input/Input";
 
 function Grid({ countries, setIdSelect, setIdEdit, setEditCountry, idselect }) {
-  const gridItems = [];
-
-  for (let i = 0; i < 48; i++) {
-    gridItems.push(<div key={i} className="item" />);
-  }
-
   function selectItem(e) {
     e.stopPropagation();
     let id;
@@ -35,22 +30,7 @@ function Grid({ countries, setIdSelect, setIdEdit, setEditCountry, idselect }) {
     console.log("selected item", id);
     setIdSelect(id);
   }
-  const blockCount = 48;
-  const blocks = [];
 
-  for (let i = 0; i < blockCount; i++) {
-    blocks.push(
-      <div
-        key={Number(countries.length + 1)}
-        onClick={selectItem}
-        className="item"
-      >
-        <div className="content">
-          {/* <img src="../../assets/planet-earth.png" alt="country" /> */}
-        </div>
-      </div>
-    );
-  }
   const cells = countries.map((obj) => (
     <div key={obj.key} id={obj.key} onClick={selectItem} className="item">
       <div className="content">
@@ -59,6 +39,19 @@ function Grid({ countries, setIdSelect, setIdEdit, setEditCountry, idselect }) {
       <Input obj={obj} setIdEdit={setIdEdit} setEditCountry={setEditCountry} />
     </div>
   ));
+
+  const blockCount = 43;
+  const blocks = [];
+
+  for (let i = 0; i < blockCount; i++) {
+    blocks.push(
+      <div key={i} id={uuid()} onClick={selectItem} className="item">
+        <div className="content">
+          {/* <img src="../../assets/planet-earth.png" alt="country" /> */}
+        </div>
+      </div>
+    );
+  }
   return (
     <div>
       <div className="container">
